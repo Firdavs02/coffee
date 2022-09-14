@@ -1,0 +1,275 @@
+/* fraunces-900 - latin */
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/fraunces-v24-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/fraunces-v24-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* barlow-regular - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/barlow-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* barlow-700 - latin */
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/barlow-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/barlow-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+body{
+    font-family: 'fraunces' , 'barlow';
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__list{
+    display: flex;
+}
+.header__item{
+    padding-right: 33px;
+}
+.header__item:last-child{
+    padding-right: 0;
+}
+.header__item_link{
+    font-family: 'Barlow';
+    font-style: normal;
+    padding-top: 50px;
+    padding-bottom: 41px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+.header__item_link:hover{
+    color: black;
+}
+.hero__wrapper{
+    background-image: url("../img/about-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 137px 0 137px 85px;
+}
+.hero__info{
+    width: 445px;
+}
+.hero__title{
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+}
+.hero__text{
+    width: 445px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+.commitment__wraper{
+    margin-bottom: 160px;
+    padding-top: 158px;
+    margin-left: 85px;
+    margin-right: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.commitment__info{
+    width: 540px;
+}
+.commitment__title{
+    margin-bottom: 32px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333D4B;
+}
+.commitment__text{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.quality__wrapper{
+    margin-bottom: 169px;
+    background-color: #282F38;
+    padding-left: 85px;
+    padding-right: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 10px;
+}
+.quality__title{
+    margin-bottom: 32px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+}
+.qaulity__text{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.qaulity__info{
+    padding-top: 90px;
+    padding-bottom: 176px;
+    width: 540px;
+}
+.quality__img{
+    position: absolute;
+    right: 85px;
+    top: -85px;
+}
+.headquarters__wrapper{
+    margin-bottom: 168px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+.headquarters__title{
+    margin-bottom: 70px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+}
+.headquarters__list{
+    width: 945px;
+    display: flex;
+    justify-content: space-between;
+}
+.headquarters__item:nth-child(1)::before{
+    content: "";
+    width: 40px;
+    height: 49px;
+    display: inline-block;
+    background-image: url("../img/uk.svg");
+    background-repeat: no-repeat;
+}
+.headquarters__item:nth-child(2)::before{
+    content: "";
+    width: 51px;
+    height: 49px;
+    display: inline-block;
+    background-image: url("../img/canada.svg");
+    background-repeat: no-repeat;
+}
+.headquarters__item:nth-child(3)::before{
+    content: "";
+    width: 48px;
+    height: 43px;
+    display: inline-block;
+    background-image: url("../img/australia.svg");
+    background-repeat: no-repeat;
+}
+.headquarters__item_title{
+    margin-bottom: 24px;
+    margin-top: 45px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+.headquarters__item_text{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+.footer__wrapper{
+    padding: 47px 85px;
+    display: flex;
+    align-items: center;
+    background-color: #2C343E;
+}
+.footer__logo{
+    display: inline-block;
+    margin-right: 103px;
+}
+.footer__list{
+    display: flex;
+}
+.footer__item:nth-child(2){
+    margin-left: 33px;
+    margin-right: 33px;
+}
+.footer__item_link{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+.footer__item_link:hover{
+    color: #FEFCF7;
+}
+.footer__icon_link:hover path{
+    fill: #FDD6BA;
+}
+.icon__wrapper{
+    margin-left: auto;
+}
+.footer__icon_link:nth-child(2){
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
