@@ -84,6 +84,7 @@ ul{
     width: 445px;
 }
 .hero__title{
+    margin-bottom: 24px;
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
